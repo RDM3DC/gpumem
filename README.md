@@ -120,3 +120,17 @@ python -m gpumem
 ---
 
 Feel free to run this initial test once your current run finishes, or let me know if you'd like adjustments or further details!
+
+## Curved Memory Compression Example
+
+The `gpumem.curved` module contains an experimental implementation of curved
+memory compression. Run the module directly to execute a small demonstration
+across two GPUs:
+
+```bash
+python -m gpumem.curved
+```
+
+This will compress a tensor on GPU0 using the curved representation, transfer the
+compressed data to GPU1, decompress it there, and verify the reconstruction
+error.
