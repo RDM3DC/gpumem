@@ -34,7 +34,6 @@ def run_test() -> None:
     print("Available GPUs:", torch.cuda.device_count())
 
     device_compute = torch.device('cuda:0')
-    device_memory = torch.device('cuda:1')  # Currently unused
 
     tensor_size = (256, 1024, 1024)  # ~1 GB float32 tensor
     tensor_gpu0 = torch.randn(tensor_size, device=device_compute)
