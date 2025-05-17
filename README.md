@@ -16,6 +16,14 @@ Here's a structured outline and initial CUDA/PyTorch code snippet you can use to
 5. **Validate Integrity of the Decompressed Tensor**
 
 ---
+### Installation
+
+Install the package in editable mode to experiment with the provided utilities:
+
+```bash
+pip install -e .
+```
+
 
 ### Starter PyTorch/CUDA Code:
 
@@ -89,6 +97,14 @@ print(f"Data integrity check - Norm difference: {difference:.4f}")
 * Data integrity is validated by computing the norm difference between the original and decompressed tensors.
 
 ---
+### Usage
+
+Run the bundled test script after installation to verify GPU communication:
+
+```bash
+python -m gpumem
+```
+
 
 ### Next Steps (after validation):
 
